@@ -1,8 +1,7 @@
 <?php
 
-declare(strict_types=1);
-
-namespace Psr\EventDispatcher;
+declare (strict_types=1);
+namespace Psr\Event_Dispatcher;
 
 /**
  * An Event whose processing may be interrupted when the event has been handled.
@@ -11,7 +10,7 @@ namespace Psr\EventDispatcher;
  * is marked as stopped after each listener is called.  If it is then it should
  * return immediately without calling any further Listeners.
  */
-interface StoppableEventInterface
+interface Stoppable_Event_Interface
 {
     /**
      * Is propagation stopped?
@@ -23,5 +22,5 @@ interface StoppableEventInterface
      *   True if the Event is complete and no further listeners should be called.
      *   False to continue calling listeners.
      */
-    public function isPropagationStopped(): bool;
+    public function is_propagation_stopped(): bool;
 }

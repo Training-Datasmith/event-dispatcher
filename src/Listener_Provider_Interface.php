@@ -1,13 +1,12 @@
 <?php
 
-declare(strict_types=1);
-
-namespace Psr\EventDispatcher;
+declare (strict_types=1);
+namespace Psr\Event_Dispatcher;
 
 /**
  * Mapper from an event to the listeners that are applicable to that event.
  */
-interface ListenerProviderInterface
+interface Listener_Provider_Interface
 {
     /**
      * @param object $event
@@ -16,5 +15,5 @@ interface ListenerProviderInterface
      *   An iterable (array, iterator, or generator) of callables.  Each
      *   callable MUST be type-compatible with $event.
      */
-    public function getListenersForEvent(object $event): iterable;
+    public function get_listeners_for_event(object $event): iterable;
 }

@@ -1,13 +1,12 @@
 <?php
 
-declare(strict_types=1);
-
-namespace Psr\EventDispatcher;
+declare (strict_types=1);
+namespace Psr\Event_Dispatcher;
 
 /**
  * Defines a dispatcher for events.
  */
-interface EventDispatcherInterface
+interface Event_Dispatcher_Interface
 {
     /**
      * Provide all relevant listeners with an event to process.
